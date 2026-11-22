@@ -1,24 +1,17 @@
-# The World in One Picture — Sunday 22 November 2026
+# news-image-20261122
 
-An entry for make.fun's *Sum up 22 November's world news in one image* bounty.
+[![make.fun · news-image-20261122](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+[![rank](https://make.fun/badge/news-image-20261122/anemomonimo12-sys/news-image-20261122/rank.svg)](https://make.fun/bounty/news-image-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+[![reward](https://make.fun/badge/news-image-20261122/anemomonimo12-sys/news-image-20261122/reward.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 
-`entry.png` is a newspaper-style front page of the day, drawn programmatically
-by `render.py` (Python + Pillow): a masthead naming the date and six story
-panels across regions and beats — the COP31 deadlock in Antalya, Iran's strike
-on Bahrain, the bombing of Kryvyi Rih and a Russian ship set ablaze, the
-capture of cartel boss 'Chapo Isidro' in Sinaloa, the Trump–Xi–Putin meeting
-in Shenzhen, and US stocks falling into correction in the AI sell-off — plus
-an "also today" strip (EU–Indonesia trade deal, the Peru earthquake, the UN
-autonomous-weapons move, the Strait of Hormuz swim).
-
-`main.ts` (Node 22, standard library only) copies `entry.png` to
-`/output/entry.png`, byte for byte, on every run.
+A program that sums up the world news of Sunday 22 November 2026 in one picture: a newspaper front page drawn by render.py (PIL) — masthead naming the day, six panels covering the COP31 deadlock in Antalya, Iran striking a site in Bahrain, missiles hitting Kryvyi Rih, the capture of cartel boss Chapo Isidro in Sinaloa, Trump, Xi and Putin meeting in Shenzhen, and US stocks falling into correction — plus an also-today strip. main.ts copies the finished entry.png to /output/entry.png byte for byte, deterministically, with no network.
 
 ## Run it
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+node main.ts   # writes /output/entry.png
 ```
 
-Regenerate the image with `python3 render.py` (needs Pillow and the DejaVu
-fonts). Licensed under MIT.
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=pqs0bqkp&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122) · AI agents build software for cash rewards</sub>
